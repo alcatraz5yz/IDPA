@@ -11,14 +11,14 @@
         <link rel="stylesheet" href="/static/css/main.css">
 
 
-        
+
             <!-- <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> -->
             <!-- <script>window.html5 || document.write('<script src="/static/js/vendor/html5shiv.js"><\/script>')</script> -->
-        
+
     </head>
     <body>
 
-        <header> 
+        <header>
 
           <div class="row">
 
@@ -29,14 +29,14 @@
             </div>
 
             <div class="grid-33">
-                
+
                 <!-- Say Hi -->
                 <h1>Hello{% if current_user.is_authenticated() %} {{ current_user.username }}{% endif %}!</h1>
 
             </div>
 
             <div class="grid-33">
-                
+
                 <!-- Log in/Log out -->
                 {% if current_user.is_authenticated() %}
                 <a href="{{ url_for('logout') }}" class="icon-power" title="Log out"></a>
@@ -47,13 +47,13 @@
                 <a href="{{ url_for('login') }}" class="icon-power" title="Log in"></a>
                 <a href="{{ url_for('register') }}" class="icon-profile" title="Register"></a>
                 {% endif %}
-                
+
             </div>
 
           </div>
 
         </header>
-        
+
         <!-- Flash messages -->
         {% with messages = get_flashed_messages(with_categories=True) %}
             {% if messages %}
@@ -67,33 +67,33 @@
 
         <header>
       <a href="index.html"id='logo'>
-        <h1>Allan Küng</h1>
+        <h1>Allan K?ng</h1>
         <h2>Designer</h2>
       </a>
-      
+
     </header>
     <div id='wrapper'>
     <section>
       <ul id='gallery'>
         <li>
-            <a href='img/numbers-01.jpg'>
-            <img src="img/numbers-01.jpg" alt="">
+            <a href='../static/img/numbers-01.jpg'>
+            <img src="../static/img/numbers-01.jpg" alt="">
             <p> Experimentation with color and texture. </p>
             </a>
         </li>
 
 
           <li>
-              <a href='img/numbers-02.jpg'>
-            <img src="img/numbers-02.jpg" alt="">
+              <a href='../static/img/numbers-02.jpg'>
+            <img src="../static/img/numbers-02.jpg" alt="">
             <p> Playing with blending modes  </p>
             </a>
         </li>
 
 
           <li>
-              <a href='img/numbers-06.jpg'>
-            <img src="img/numbers-06.jpg" alt="">
+              <a href='../static/img/numbers-06.jpg'>
+            <img src="../static/img/numbers-06.jpg" alt="">
             <p> Trying to create an 80s look </p>
             </a>
         </li>
@@ -101,8 +101,8 @@
 
 
           <li>
-              <a href='img/numbers-09.jpg'>
-            <img src="img/numbers-09.jpg" alt="">
+              <a href='../static/img/numbers-09.jpg'>
+            <img src="../static/img/numbers-09.jpg" alt="">
             <p> Drips created using photoshop </p>
             </a>
         </li>
@@ -110,8 +110,8 @@
 
 
           <li>
-              <a href='img/numbers-12.jpg'>
-            <img src="img/numbers-12.jpg" alt="">
+              <a href='../static/img/numbers-12.jpg'>
+            <img src="../static/img/numbers-12.jpg" alt="">
             <p> Creating shapes </p>
             </a>
         </li>
@@ -124,11 +124,11 @@
     </div>
 
          <footer>
-                <p>&copy; 2017 Allan Küng</P>
-            </footer> 
+                <p>&copy; 2017 Allan K?ng</P>
+            </footer>
 
-            
-            
+
+
         <script src="/static/js/vendor/disTime.min.js"></script>
         <script src="/static/js/main.js"></script>
 
