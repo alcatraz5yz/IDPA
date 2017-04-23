@@ -107,6 +107,11 @@ def about():
 def letsplay():
     return render_template('letsplay.html')
 
+@app.route('/anime')
+@login_required
+def anime():
+    return render_template('anime.html')
+
 
 
 
