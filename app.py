@@ -89,7 +89,7 @@ def post():
         models.Post.create(user=g.user.id,
                            content=form.content.data.strip())
         flash("Message posted! Thanks!", "success")
-        return redirect(url_for('index'))
+        return redirect(url_for('stream'))
     return render_template('post.html', form=form)
 
 
@@ -186,8 +186,8 @@ if __name__ == '__main__':
     models.initialize()
     try:
         models.User.create_user(
-            username='kennethlove',
-            email='kenneth@teamtreehouse.com',
+            username='allan',
+            email='2012pkual@gmail.com',
             password='password',
             admin=True
         )
