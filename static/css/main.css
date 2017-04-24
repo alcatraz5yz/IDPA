@@ -157,8 +157,8 @@ header {
   background: url('../img/anime.svg') center no-repeat;
   background-size: 30px 30px;
   display: block;
-  float: right;
-  margin-right: -240px;
+  float: left;
+  margin-left: -200px;
 }
 .icon-power { /*#logout*/
   width: 30px;
@@ -168,6 +168,15 @@ header {
   display: block;
   float: right;
   margin-right: -300px;
+}
+.icon-profile {
+  width: 30px;
+  height: 30px;
+  background: url('../img/icon-profile.svg') center no-repeat;
+  background-size: 30px 30px;
+  display: block;
+  float: right;
+  margin-right: -250px;
 }
 .about { /*war icon-power2*/
   width: 30px;
@@ -191,12 +200,13 @@ header {
 .stream {  /*war icon-power4*/
   width: 30px;
   height: 30px;
-  background: url('../img/icon-power4.svg') center no-repeat;
+  background: url('../img/stream.svg') center no-repeat;
   background-size: 30px 30px;
   display: block;
   float: right;
   margin-right: -150px;
 }
+
 
 /*Main*/
 .main {
