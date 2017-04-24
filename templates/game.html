@@ -5,31 +5,75 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" sizes="196x196" href="bunny.png">
-	<title>Bunny Defender</title>
-    <script src="../bunnygame/libs/phaser.js"></script>
-    <script src="../bunnygame/Boot.js"></script>
-    <script src="../bunnygame/Preloader.js"></script>
-    <script src="../bunnygame/StartMenu.js"></script>
-    <script src="../bunnygame/Game.js"></script>
-	<style>
-		body {
-			padding: 0;
-			margin: 0;
-			background-color: #000000;
-		}
-	</style>
+		<link rel="stylesheet" href="/static/css/normalize.min.css">
+		<link rel="stylesheet" href="/static/css/main.css">
+
 </head>
 <body>
-    <div id="gameContainer"></div>
-    <script type="text/javascript">
+	<header>
+
+		<div class="row">
+
+			<div class="grid-33">
+
+				<a href="{{ url_for('index') }}" class="icon-logo"></a>
+
+			</div>
+
+			<div class="grid-33">
+
+					<!-- Say Hi -->
+					<h1>Hello{% if current_user.is_authenticated() %} {{ current_user.username }}{% endif %}!</h1>
+
+			</div>
+
+			<div class="grid-33">
+
+					<!-- Log in/Log out -->
+					{% if current_user.is_authenticated() %}
+					<a href="{{ url_for('logout') }}" class="icon-power" title="Log out"></a>
+					<a href="{{ url_for('about') }}" class="about" title="about"></a>
+					<a href="{{ url_for('letsplay') }}" class="letsplay" title="letsplay"></a>
+					<a href="{{ url_for('stream') }}" class="stream" title="stream"></a>
+					<a href="{{ url_for('anime') }}" class="anime" title="anime"></a>
+					<a href="{{ url_for('game') }}" class="game" title="game"></a>
+					{% else %}
+					<a href="{{ url_for('login') }}" class="icon-power" title="Log in"></a>
+					<a href="{{ url_for('register') }}" class="icon-profile" title="Register"></a>
+					{% endif %}
+
+			</div>
+
+		</div>
+
+	</header>
+
+	<!-- Flash messages -->
+	{% with messages = get_flashed_messages(with_categories=True) %}
+			{% if messages %}
+					{% for category, message in messages %}
+							<div class="notification {{ category }}">{{ message }}</div>
+					{% endfor %}
+			{% endif %}
+	{% endwith %}
+
+
+    <div id="gameContainer">
+
         window.onload = function() {
-            var game = new Phaser.Game(540, 960, Phaser.AUTO, 'gameContainer');
+            var game = new Phaser.Game(600, 960, Phaser.AUTO, 'gameContainer');
             game.state.add('Boot', BunnyDefender.Boot);
             game.state.add('Preloader', BunnyDefender.Preloader);
             game.state.add('StartMenu', BunnyDefender.StartMenu);
             game.state.add('Game', BunnyDefender.Game);
             game.state.start('Boot');
         }
-    </script>
+
+</div>
+		<script src="../bunnygame/libs/phaser.min.js"></script>
+    <script src="../bunnygame/Boot.js"></script>
+    <script src="../bunnygame/Preloader.js"></script>
+    <script src="../bunnygame/StartMenu.js"></script>
+    <script src="../bunnygame/Game.js"></script>
 </body>
 </html>
