@@ -5,10 +5,14 @@ body {
 canvas {
 	background: #fff;
 	display: block;
-	margin: 50px auto 10px;
-	border-radius: 5px;
+	margin: 10px 10px;
+	border-radius: 20px;
 	box-shadow: 0 4px 0 0 #222;
 	cursor: url(../img/cursor.png), crosshair;
+
+  margin-top:50px; /* this is half the height of your div*/
+  margin-left:-450px; /*this is half of width of your div*/
+
 }
 .controls {
 	min-height: 60px;
@@ -30,7 +34,7 @@ ul li, #newColor {
 	display:block;
 	height: 54px;
 	width: 54px;
-	border-radius: 60px;
+	border-radius: 600px;
 	cursor: pointer;
 	border: 0;
 	box-shadow: 0 3px 0 0 #222;
@@ -86,7 +90,7 @@ button {
 	padding: 10px;
 	width: 305px;
 	position: relative;
-		
+
 	display:none;
 }
 #colorSelect:after {
@@ -115,7 +119,7 @@ button {
 
 }
 .sliders p {
-	margin: 8px 0;
+	margin: 10px 0;
 	vertical-align: middle;
 }
 .sliders label {

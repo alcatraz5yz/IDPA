@@ -151,6 +151,15 @@ header {
   float: left;
   margin-left: -250px;
 }
+.icon-power5 {  /*stream*/
+  width: 30px;
+  height: 30px;
+  background: url('../img/icon-power5.svg') center no-repeat;
+  background-size: 30px 30px;
+  display: block;
+  float: right;
+  margin-left: -200px;
+}
 .icon-profile { /*register*/
   width: 30px;
   height: 30px;
