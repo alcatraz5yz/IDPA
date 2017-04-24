@@ -151,19 +151,10 @@ header {
   float: left;
   margin-left: -250px;
 }
-.icon-power5 {  /*stream*/
-  width: 30px;
+
+.anime { /*anime rechts neben index*/
   height: 30px;
-  background: url('../img/icon-power5.svg') center no-repeat;
-  background-size: 30px 30px;
-  display: block;
-  float: right;
-  margin-left: -200px;
-}
-.icon-profile { /*register*/
-  width: 30px;
-  height: 30px;
-  background: url('../img/icon-profile.svg') center no-repeat;
+  background: url('../img/anime.svg') center no-repeat;
   background-size: 30px 30px;
   display: block;
   float: right;
@@ -178,26 +169,26 @@ header {
   float: right;
   margin-right: -300px;
 }
-.icon-power2 { /*about*/
+.about { /*war icon-power2*/
   width: 30px;
   height: 30px;
-  background: url('../img/icon-power2.svg') center no-repeat;
+  background: url('../img/about.svg') center no-repeat;
   background-size: 30px 30px;
   display: block;
   float: right;
   margin-right: -250px;
 }
-.icon-power3 { /*letsplay*/
+.letsplay { /*war icon-power3*/
   width: 30px;
   height: 30px;
-  background: url('../img/icon-power3.svg') center no-repeat;
+  background: url('../img/letsplay.svg') center no-repeat;
   background-size: 30px 30px;
   display: block;
   float: right;
   margin-right: -200px;
 }
 
-.icon-power4 {  /*stream*/
+.stream {  /*war icon-power4*/
   width: 30px;
   height: 30px;
   background: url('../img/icon-power4.svg') center no-repeat;

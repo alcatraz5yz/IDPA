@@ -40,9 +40,10 @@
                 <!-- Log in/Log out -->
                 {% if current_user.is_authenticated() %}
                 <a href="{{ url_for('logout') }}" class="icon-power" title="Log out"></a>
-                <a href="{{ url_for('about') }}" class="icon-power2" title="about"></a>
-                <a href="{{ url_for('letsplay') }}" class="icon-power3" title="letsplay"></a>
-                <a href="{{ url_for('stream') }}" class="icon-power4" title="stream"></a>
+                <a href="{{ url_for('about') }}" class="about" title="about"></a>
+                <a href="{{ url_for('letsplay') }}" class="letsplay" title="letsplay"></a>
+                <a href="{{ url_for('stream') }}" class="stream" title="stream"></a>
+                <a href="{{ url_for('anime') }}" class="anime" title="anime"></a>
                 {% else %}
                 <a href="{{ url_for('login') }}" class="icon-power" title="Log in"></a>
                 <a href="{{ url_for('register') }}" class="icon-profile" title="Register"></a>
