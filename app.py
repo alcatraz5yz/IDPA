@@ -112,6 +112,11 @@ def letsplay():
 def anime():
     return render_template('anime.html')
 
+@app.route('/game')
+@login_required
+def game():
+    return render_template('game.html')
+
 
 
 

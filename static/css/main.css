@@ -153,12 +153,13 @@ header {
 }
 
 .anime { /*anime rechts neben index*/
+  width: 30px;
   height: 30px;
   background: url('../img/anime.svg') center no-repeat;
   background-size: 30px 30px;
   display: block;
   float: left;
-  margin-left: -200px;
+  margin-left: -725px;
 }
 .icon-power { /*#logout*/
   width: 30px;
@@ -205,6 +206,15 @@ header {
   display: block;
   float: right;
   margin-right: -150px;
+}
+.game {
+  width: 30px;
+  height: 30px;
+  background: url('../img/game.svg') center no-repeat;
+  background-size: 30px 30px;
+  display: block;
+  float: right;
+  margin-right: -100px;
 }
 
 
