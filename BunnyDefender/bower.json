@@ -1,0 +1,20 @@
+{
+  "name": "bunny",
+  "authors": [
+    "Allan Küng <2012pkual@gmail.com>"
+  ],
+  "description": "kill",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "axboot.js": "^0.0.2"
+  }
+}
