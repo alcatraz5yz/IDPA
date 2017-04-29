@@ -102,10 +102,10 @@ def index():
 def about():
     return render_template('about.html')
 
-@app.route('/letsplay')
+@app.route('/paint')
 @login_required
-def letsplay():
-    return render_template('letsplay.html')
+def paint():
+    return render_template('paint.html')
 
 @app.route('/anime')
 @login_required
