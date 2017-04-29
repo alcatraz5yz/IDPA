@@ -58,22 +58,7 @@
 	{% endwith %}
 
 
-    <div id="gameContainer">
 
-        window.onload = function() {
-            var game = new Phaser.Game(600, 960, Phaser.AUTO, 'gameContainer');
-            game.state.add('Boot', BunnyDefender.Boot);
-            game.state.add('Preloader', BunnyDefender.Preloader);
-            game.state.add('StartMenu', BunnyDefender.StartMenu);
-            game.state.add('Game', BunnyDefender.Game);
-            game.state.start('Boot');
-        }
 
-</div>
-		<script src="../bunnygame/libs/phaser.min.js"></script>
-    <script src="../bunnygame/Boot.js"></script>
-    <script src="../bunnygame/Preloader.js"></script>
-    <script src="../bunnygame/StartMenu.js"></script>
-    <script src="../bunnygame/Game.js"></script>
 </body>
 </html>

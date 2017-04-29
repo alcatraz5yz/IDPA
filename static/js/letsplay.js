@@ -15,7 +15,7 @@ $(".controls").on("click", "li", function(){
   //cache current color
   color = $(this).css("background-color");
 });
-  
+
 //When "New Color" is pressed
 $("#revealColorSelect").click(function(){
   //Show color select or hide the color select
@@ -26,9 +26,13 @@ $("#revealColorSelect").click(function(){
 //update the new color span
 function changeColor() {
   var r = $("#red").val();
-  var g = $("#green").val();
   var b = $("#blue").val();
-  $("#newColor").css("background-color", "rgb(" + r + "," + g +", " + b + ")");
+  var y = $("#yellow").val();
+  var g = $("#green").val();
+  var o = $("#orange").val();
+  var b = $("#violett").val();
+  var b = $("#black").val();
+  $("#newColor").css("background-color", "rgyb(" + r + "," + g +", " + y +", " + b + ")");
 }
 
 //When color sliders change
@@ -63,14 +67,3 @@ $canvas.mousedown(function(e){
 }).mouseleave(function(){
   $canvas.mouseup();
 });
-
-
-
-  
-
-
-
-
-
-
-

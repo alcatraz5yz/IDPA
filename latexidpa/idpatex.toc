@@ -13,6 +13,7 @@
 \contentsline {section}{\numberline {8}deployment}{7}{section.8}
 \contentsline {section}{\numberline {9}imported libraries}{8}{section.9}
 \contentsline {section}{\numberline {10}Database intro}{9}{section.10}
+\contentsline {subsection}{\numberline {10.1}sqlite}{9}{subsection.10.1}
 \contentsline {section}{\numberline {11}}{10}{section.11}
 \contentsline {section}{\numberline {12}}{11}{section.12}
 \contentsline {section}{\numberline {13}}{12}{section.13}
@@ -24,7 +25,8 @@
 \contentsline {section}{\numberline {19}letsplay}{18}{section.19}
 \contentsline {section}{\numberline {20}about}{19}{section.20}
 \contentsline {section}{\numberline {21}logout}{20}{section.21}
-\contentsline {section}{\numberline {22}}{21}{section.22}
+\contentsline {section}{\numberline {22}bower}{21}{section.22}
 \contentsline {section}{\numberline {23}}{22}{section.23}
-\contentsline {section}{\numberline {24}References}{23}{section.24}
-\contentsline {section}{\numberline {A}Backmatter Words}{24}{appendix.A}
+\contentsline {section}{\numberline {24}}{23}{section.24}
+\contentsline {section}{\numberline {25}References}{24}{section.25}
+\contentsline {section}{\numberline {A}Backmatter Words}{25}{appendix.A}

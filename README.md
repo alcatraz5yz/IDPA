@@ -1,36 +1,34 @@
 #Welcome to my IDPA-project
 
-for my project I wanted to create an interactive website where you can see 
-* The default registration and login pages that `express-stormpath` can provide to your application.
--gaming made with phaser.js
+for my project I wanted to create an interactive website where you can see
+DO login/signup using simple flask
 -Also some other little games made with pure javascript=>jQuery
--it is deployed to heroku so you can watch it on ddd.heroku.com
+-also some cool background arts
+-it is deployed to heroku so you can watch it on idpa.heroku.com
 
 
 
 
 
-[]gantt picture
+[x]gantt picture
 
 []structure of whole website
 
-[]with mysql oder postgresql (sqlalchemy) nicht mit sqlite
+[]evtl with mysql oder postgresql (sqlalchemy)
 
 []restful api mit hoher sicherheitsstufe
 
 []jquery games finished
 
-[]html5 game finished
-
 []assemble everything
 
-[]latex file finished
+[]latex file finished?
 
-[]md file in github finished
+[x]md file in github finished
 
 []testfiles schreiben
 
-[]deploy to heroku
+[x]deploy to heroku
 
 
 
@@ -43,32 +41,27 @@ for my project I wanted to create an interactive website where you can see
 
 1. Clone this repo to your computer, and cd into the project directory:
 
-  ```bash
-  git clone https://github.com/meruemxkomugi/IDPA.git
-  cd https://github.com/meruemxkomugi/IDPA.git
-  ```
 
-2. Initiate git repo:
+  $ git clone https://github.com/alcatraz5yz/IDPA.git
+  $ cd https://github.com/alcatraz5yz/IDPA.git
 
-  $ npm init
-  
+make a virtual environment:
+$ virtualenv venv
+$ virtualenv venv/bin/activate
+you are now in your own virtual environment
 
-3. Install the dependencies from package.json:
+now if you want to watch this website on your localhost:
+$ pip install -r requirements.txt
+$ python app.py
+then go to your localhost
 
-  
- $ npm install
-  
 
-4. Start the server:
+or if you want to deploy it to heroku:
 
-  ```bash
-  node server.js
-  ```
+$ heroku login
 
-5. Visit [http://localhost:3000/](http://localhost:3000/) in your browser
+$ heroku create myflaskwebsite
 
-## Learn More
-Visit [http://docs.stormpath.com/nodejs/express/latest/](http://docs.stormpath.com/nodejs/express/latest/)
+$ git push heroku master
 
-## Contact Stormpath Support
-[support@stormpath.com](mailto:support@stormpath.com)
+$ heroku open

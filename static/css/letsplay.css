@@ -57,6 +57,22 @@ ul li {
 	background: #ECD13F;
 }
 
+.green {
+	background: #83AD84;
+}
+
+.orange {
+	background: #D09A6A;
+}
+
+.violett {
+	background: #370C3F;
+}
+
+.black {
+	background: #2D2D2D;
+}
+
 .selected {
 	border: 7px solid #fff;
 	width: 40px;
