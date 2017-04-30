@@ -9,6 +9,7 @@
         <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/static/css/normalize.min.css">
         <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="/static/css/paint.css">
 
 
 
@@ -67,27 +68,76 @@
 
         <div class="row">
 
-        <p> header </p>
+        <title>Simple Drawing Application</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+    <canvas width="1700" height="800"></canvas>
+    <div class="controls">
+        <ul>
+            <li class="red selected"></li>
+            <li class="blue"></li>
+            <li class="yellow"></li>
+            <li class="green"></li>
+            <li class="orange"></li>
+            <li class="violett"></li>
+            <li class="black"></li>
+        </ul>
+        <button id="revealColorSelect">New Color</button>
+        <div id="colorSelect">
+            <span id="newColor"></span>
+            <div class="sliders">
+                <p>
+                    <label for="red">Red</label>
+                    <input id="red" name="red" type="range" min=0 max=255 value=0>
+                </p>
+                <p>
+                    <label for="blue">Blue</label>
+                    <input id="blue" name="blue" type="range" min=0 max=255 value=0>
+                </p>
+                <p>
+                    <label for="yellow">Yellow</label>
+                    <input id="blue" name="blue" type="range" min=0 max=255 value=0>
+                </p>
 
+                <p>
+                    <label for="green">Green</label>
+                    <input id="green" name="green" type="range" min=0 max=255 value=0>
+                </p>
 
-        <div id='wrapper'>
-            <section>
-                <img src='../static/img/allan.jpg' alt='Photograph of Nick Pettit' class='profile-photo'>
-                <h3>About</h3>
-                <p>HI, I'm allan! this is my design Portfolio</p>
-                <p>if you dlike to follow me on twitter my username is</p>
-            </section>
-            <footer>
-            <a href='http://youtube.com'><img src='/static/img/twitter-wrap.png' alt='Twitter Logo'class='social-icon'></a>
-                <p>&copy; 2017 Allan K?ng</P>
-            </footer>
+                <p>
+                    <label for="orange">Orange</label>
+                    <input id="orange" name="orange" type="range" min=0 max=255 value=0>
+                </p>
+
+                <p>
+                    <label for="violett">Violett</label>
+                    <input id="violett" name="violett" type="range" min=0 max=255 value=0>
+                </p>
+
+                <p>
+                    <label for="black">Black</label>
+                    <input id="black" name="black" type="range" min=0 max=255 value=0>
+                </p>
+            </div>
+            <div>
+            <button id="addNewColor">Add Color</button>
+            </div>
         </div>
+    </div>
+
+    <footer>
+            <p>&copy; 2017 Allan K?ng</P>
+    </footer>
 
 
 
 
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="/static/js/vendor/disTime.min.js"></script>
         <script src="/static/js/main.js"></script>
+        <script src="/static/js/paint.js"></script>
+
 
     </body>
 </html>

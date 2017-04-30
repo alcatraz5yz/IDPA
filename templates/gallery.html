@@ -8,8 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/static/css/normalize.min.css">
+        <link rel="stylesheet" href="/static/css/background.css">
         <link rel="stylesheet" href="/static/css/main.css">
-
+        <link rel="stylesheet" href="/static/css/gallery.css" type="text/css" media="screen" title="no title" charset="utf-8">
 
 
             <!-- <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> -->
@@ -17,6 +18,7 @@
 
     </head>
     <body>
+
 
         <header>
 
@@ -66,28 +68,38 @@
         {% endwith %}
 
         <div class="row">
+          <canvas id="canvas"></canvas>
 
-        <p> header </p>
+          <h1>Image Gallery</h1>
+          <ul id="imageGallery">
+            <li><a href="/static/img/refferal_machine.png"><img src="../static/img/refferal_machine.png" width="100" alt="Refferal Machine By Matthew Spiel"></a></li>
+            <li><a href="/static/img/space-juice.png"><img src="/static/img/space-juice.png" width="100" alt="Space Juice by Mat Helme"></a></li>
+            <li><a href="/static/img/education.png"><img src="/static/img/education.png" width="100" alt="Education by Chris Michel"></a></li>
+            <li><a href="/static/img/copy_mcrepeatsalot.png"><img src="/static/img/copy_mcrepeatsalot.png" width="100" alt="Wanted: Copy McRepeatsalot by Chris Michel"></a></li>
+            <li><a href="/static/img/sebastian.png"><img src="/static/img/sebastian.png" width="100" alt="Sebastian by Mat Helme"></a></li>
+            <li><a href="/static/img/skill-polish.png"><img src="/static/img/skill-polish.png" width="100" alt="Skill Polish by Chris Michel"></a></li>
+            <li><a href="/static/img/chuck.png"><img src="/static/img/chuck.png" width="100" alt="Chuck by Mat Helme"></a></li>
+            <li><a href="/static/img/library.png"><img src="/static/img/library.png" width="100" alt="Library by Tyson Rosage"></a></li>
+            <li><a href="/static/img/boat.png"><img src="/static/img/boat.png" width="100" alt="Boat by Griffin Moore"></a></li>
+            <li><a href="/static/img/illustrator_foundations.png"><img src="/static/img/illustrator_foundations.png" width="100" alt="Illustrator Foundations by Matthew Spiel"></a></li>
+            <li><a href="/static/img/treehouse_shop.jpg"><img src="/static/img/treehouse_shop.jpg" width="100" alt="Treehouse Shop by Eric Smith"></a></li>
+          </ul>
 
 
-        <div id='wrapper'>
-            <section>
-                <img src='../static/img/allan.jpg' alt='Photograph of Nick Pettit' class='profile-photo'>
-                <h3>About</h3>
-                <p>HI, I'm allan! this is my design Portfolio</p>
-                <p>if you dlike to follow me on twitter my username is</p>
-            </section>
-            <footer>
-            <a href='http://youtube.com'><img src='/static/img/twitter-wrap.png' alt='Twitter Logo'class='social-icon'></a>
-                <p>&copy; 2017 Allan K?ng</P>
-            </footer>
-        </div>
+
+    <footer>
+
+    <p>&copy; 2017 Allan Kueng</P>
+    </footer>
+    </div>
 
 
 
 
         <script src="/static/js/vendor/disTime.min.js"></script>
-        <script src="/static/js/main.js"></script>
+        <script src="/static/js/background.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/static/js/gallery.js" type="text/javascript" charset="utf-8"></script>
 
     </body>
 </html>
