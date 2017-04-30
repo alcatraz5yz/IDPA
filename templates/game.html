@@ -1,18 +1,93 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-    <head>
-       <script src="phaser.min.js"></script>
-        <style>
-            body {
-                margin: 0;
-                background: #222222;
-            }
-            canvas {
-                cursor: crosshair;
-            }
-        </style>
-    </head>
-    <body>
-        <script src="game.js"></script>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" sizes="196x196" href="bunny.png">
+        <link rel="stylesheet" href="/static/css/normalize.min.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+
+</head>
+<body>
+    <header>
+
+        <div class="row">
+
+            <div class="grid-33">
+
+                <a href="{{ url_for('index') }}" class="icon-logo"></a>
+
+            </div>
+
+            <div class="grid-33">
+
+                    <!-- Say Hi -->
+                    <h1>Hello{% if current_user.is_authenticated() %} {{ current_user.username }}{% endif %}!</h1>
+
+            </div>
+
+            <div class="grid-33">
+
+                    <!-- Log in/Log out -->
+                    {% if current_user.is_authenticated() %}
+                    <a href="{{ url_for('logout') }}" class="icon-power" title="Log out"></a>
+                    <a href="{{ url_for('about') }}" class="about" title="about"></a>
+                    <a href="{{ url_for('paint') }}" class="paint" title="paint"></a>
+                    <a href="{{ url_for('stream') }}" class="stream" title="stream"></a>
+                    <a href="{{ url_for('gallery') }}" class="gallery" title="gallery"></a>
+                    <a href="{{ url_for('game') }}" class="game" title="game"></a>
+                    {% else %}
+                    <a href="{{ url_for('login') }}" class="icon-power" title="Log in"></a>
+                    <a href="{{ url_for('register') }}" class="icon-profile" title="Register"></a>
+                    {% endif %}
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Flash messages -->
+    {% with messages = get_flashed_messages(with_categories=True) %}
+            {% if messages %}
+                    {% for category, message in messages %}
+                            <div class="notification {{ category }}">{{ message }}</div>
+                    {% endfor %}
+            {% endif %}
+    {% endwith %}
+
+
+
+<style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #3E3F42;
+        }
+    iframe {
+        margin-left: 1200px;
+        margin-top: 200px;
+        padding: 0px;
+
+
+
+    }
+    </style>
+
+
+
+
+    <iframe width="1000" height="800"
+      src="/static/BunnyDefender/index.html"
+  frameborder="0" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+</body>
 </html>
