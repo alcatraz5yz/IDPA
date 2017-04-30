@@ -152,10 +152,10 @@ header {
   margin-left: -250px;
 }
 
-.anime { /*anime rechts neben index*/
+.gallery { /*anime rechts neben index*/
   width: 30px;
   height: 30px;
-  background: url('../img/anime.svg') center no-repeat;
+  background: url('../img/gallery.svg') center no-repeat;
   background-size: 30px 30px;
   display: block;
   float: left;
@@ -191,7 +191,7 @@ header {
 .paint { /*war icon-power3*/
   width: 30px;
   height: 30px;
-  background: url('../img/letsplay.svg') center no-repeat;
+  background: url('../img/paint.svg') center no-repeat;
   background-size: 30px 30px;
   display: block;
   float: right;

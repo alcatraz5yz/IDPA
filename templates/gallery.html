@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="/static/css/normalize.min.css">
         <link rel="stylesheet" href="/static/css/background.css">
         <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="/static/css/gallery.css" type="text/css" media="screen" title="no title" charset="utf-8">
 
 
             <!-- <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> -->
@@ -42,9 +43,9 @@
                 {% if current_user.is_authenticated() %}
                 <a href="{{ url_for('logout') }}" class="icon-power" title="Log out"></a>
                 <a href="{{ url_for('about') }}" class="about" title="about"></a>
-                <a href="{{ url_for('letsplay') }}" class="letsplay" title="letsplay"></a>
+                <a href="{{ url_for('paint') }}" class="paint" title="paint"></a>
                 <a href="{{ url_for('stream') }}" class="stream" title="stream"></a>
-                <a href="{{ url_for('anime') }}" class="anime" title="anime"></a>
+                <a href="{{ url_for('gallery') }}" class="gallery" title="gallery"></a>
                 <a href="{{ url_for('game') }}" class="game" title="game"></a>
                 {% else %}
                 <a href="{{ url_for('login') }}" class="icon-power" title="Log in"></a>
@@ -69,73 +70,26 @@
         <div class="row">
           <canvas id="canvas"></canvas>
 
-
-        <header>
-      <a href="index.html"id='logo'>
-        <h1>Allan Kueng</h1>
-        <h2>Designer</h2>
-      </a>
-
-    </header>
-    <div id='wrapper'>
-    <section>
-      <ul id='gallery'>
-        <li>
-            <a href='../static/img/numbers-01.jpg'>
-            <img src="../static/img/numbers-01.jpg" alt="">
-            <p> Experimentation with color and texture. </p>
-            </a>
-        </li>
+          <h1>Image Gallery</h1>
+          <ul id="imageGallery">
+            <li><a href="/static/img/refferal_machine.png"><img src="../static/img/refferal_machine.png" width="100" alt="Refferal Machine By Matthew Spiel"></a></li>
+            <li><a href="/static/img/space-juice.png"><img src="/static/img/space-juice.png" width="100" alt="Space Juice by Mat Helme"></a></li>
+            <li><a href="/static/img/education.png"><img src="/static/img/education.png" width="100" alt="Education by Chris Michel"></a></li>
+            <li><a href="/static/img/copy_mcrepeatsalot.png"><img src="/static/img/copy_mcrepeatsalot.png" width="100" alt="Wanted: Copy McRepeatsalot by Chris Michel"></a></li>
+            <li><a href="/static/img/sebastian.png"><img src="/static/img/sebastian.png" width="100" alt="Sebastian by Mat Helme"></a></li>
+            <li><a href="/static/img/skill-polish.png"><img src="/static/img/skill-polish.png" width="100" alt="Skill Polish by Chris Michel"></a></li>
+            <li><a href="/static/img/chuck.png"><img src="/static/img/chuck.png" width="100" alt="Chuck by Mat Helme"></a></li>
+            <li><a href="/static/img/library.png"><img src="/static/img/library.png" width="100" alt="Library by Tyson Rosage"></a></li>
+            <li><a href="/static/img/boat.png"><img src="/static/img/boat.png" width="100" alt="Boat by Griffin Moore"></a></li>
+            <li><a href="/static/img/illustrator_foundations.png"><img src="/static/img/illustrator_foundations.png" width="100" alt="Illustrator Foundations by Matthew Spiel"></a></li>
+            <li><a href="/static/img/treehouse_shop.jpg"><img src="/static/img/treehouse_shop.jpg" width="100" alt="Treehouse Shop by Eric Smith"></a></li>
+          </ul>
 
 
-          <li>
-              <a href='../static/img/numbers-02.jpg'>
-            <img src="../static/img/numbers-02.jpg" alt="">
-            <p> Playing with blending modes  </p>
-            </a>
-        </li>
-
-
-          <li>
-              <a href='../static/img/numbers-06.jpg'>
-            <img src="../static/img/numbers-06.jpg" alt="">
-            <p> Trying to create an 80s look </p>
-            </a>
-        </li>
-
-
-
-          <li>
-              <a href='../static/img/numbers-09.jpg'>
-            <img src="../static/img/numbers-09.jpg" alt="">
-            <p> Drips created using photoshop </p>
-            </a>
-        </li>
-
-
-
-          <li>
-              <a href='../static/img/numbers-12.jpg'>
-            <img src="../static/img/numbers-12.jpg" alt="">
-            <p> Creating shapes </p>
-            </a>
-        </li>
-
-
-
-
-      </ul>
-    </section>
 
     <footer>
-    <a href=''>
-      <img src="../static/img/twitter-wrap.png">
-    </a>
 
-    <a href= ''>
-      <img src="../static/img/facebook-wrap.png">
-    </a>
-    <p>&copy; 2017 Allan Kueng.</P>
+    <p>&copy; 2017 Allan Kueng</P>
     </footer>
     </div>
 
@@ -144,6 +98,8 @@
 
         <script src="/static/js/vendor/disTime.min.js"></script>
         <script src="/static/js/background.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/static/js/gallery.js" type="text/javascript" charset="utf-8"></script>
 
     </body>
 </html>

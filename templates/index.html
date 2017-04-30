@@ -10,7 +10,9 @@
         <link rel="stylesheet" href="/static/css/normalize.min.css">
         <!-- <link rel="stylesheet" href="/static/css/background.css"> -->
         <link rel="stylesheet" href="/static/css/main.css">
-        
+        <link rel="stylesheet" href="/static/css/index.css">
+
+
 
 
 
@@ -44,9 +46,9 @@
                 {% if current_user.is_authenticated() %}
                 <a href="{{ url_for('logout') }}" class="icon-power" title="Log out"></a>
                 <a href="{{ url_for('about') }}" class="about" title="about"></a>
-                <a href="{{ url_for('letsplay') }}" class="letsplay" title="letsplay"></a>
+                <a href="{{ url_for('paint') }}" class="paint" title="paint"></a>
                 <a href="{{ url_for('stream') }}" class="stream" title="stream"></a>
-                <a href="{{ url_for('anime') }}" class="anime" title="anime"></a>
+                <a href="{{ url_for('gallery') }}" class="gallery" title="gallery"></a>
                 <a href="{{ url_for('game') }}" class="game" title="game"></a>
                 {% else %}
                 <a href="{{ url_for('login') }}" class="icon-power" title="Log in"></a>
@@ -81,8 +83,111 @@
 
 
 
+          <div class="grid-third">
+            <img src="/static/img/sticker-team.png" alt="" />
+            <p>United we stand divided we fail.  Meet the all star team behind the agency.</p>
+            <a href="team.html" class="button">Meet the Team</a>
+          </div><!--/team-->
 
 
+          <div class="grid-third">
+            <img src="/static/img/sticker-work.png" alt="" />
+            <p>Check our latest app builds or download them in the App Store.</p>
+            <a href="work.html" class="button">Latest Projects</a>
+          </div><!--/work-->
+
+
+          <div class="grid-third">
+            <img src="/static/img/sticker-contact.png" alt="" />
+            <p>Have questions or requests?  Feel free to contact us, we’d love hear from you.</p>
+            <a href="#" class="button">Contact Us</a>
+          </div><!--/contact-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="grid-third">
+            <img src="/static/img/sticker-team.png" alt="" />
+            <p>United we stand divided we fail.  Meet the all star team behind the agency.</p>
+            <a href="team.html" class="button">Meet the Team</a>
+          </div><!--/team-->
+
+
+          <div class="grid-third">
+            <img src="/static/img/sticker-work.png" alt="" />
+            <p>Check our latest app builds or download them in the App Store.</p>
+            <a href="work.html" class="button">Latest Projects</a>
+          </div><!--/work-->
+
+
+          <div class="grid-third">
+            <img src="/static/img/sticker-contact.png" alt="" />
+            <p>Have questions or requests?  Feel free to contact us, we’d love hear from you.</p>
+            <a href="#" class="button">Contact Us</a>
+          </div><!--/contact-->
+
+
+
+
+
+
+
+
+          <div class="grid-third">
+            <img src="/static/img/sticker-team.png" alt="" />
+            <p>United we stand divided we fail.  Meet the all star team behind the agency.</p>
+            <a href="team.html" class="button">Meet the Team</a>
+          </div><!--/team-->
+
+
+          <div class="grid-third">
+            <img src="/static/img/sticker-work.png" alt="" />
+            <p>Check our latest app builds or download them in the App Store.</p>
+            <a href="work.html" class="button">Latest Projects</a>
+          </div><!--/work-->
+
+
+          <div class="grid-third">
+            <img src="/static/img/sticker-contact.png" alt="" />
+            <p>Have questions or requests?  Feel free to contact us, we’d love hear from you.</p>
+            <a href="#" class="button">Contact Us</a>
+          </div><!--/contact-->
+
+
+
+
+          <div class="grid-third">
+            <img src="/static/img/sticker-team.png" alt="" />
+            <p>United we stand divided we fail.  Meet the all star team behind the agency.</p>
+            <a href="team.html" class="button">Meet the Team</a>
+          </div><!--/team-->
+
+
+          <div class="grid-third">
+            <img src="/static/img/sticker-work.png" alt="" />
+            <p>Check our latest app builds or download them in the App Store.</p>
+            <a href="work.html" class="button">Latest Projects</a>
+          </div><!--/work-->
+
+
+          <div class="grid-third">
+            <img src="/static/img/sticker-contact.png" alt="" />
+            <p>Have questions or requests?  Feel free to contact us, we’d love hear from you.</p>
+            <a href="#" class="button">Contact Us</a>
+          </div><!--/contact-->
 
 
 
@@ -92,23 +197,18 @@
 
 
     <footer>
-    <a href=''>
-      <img src="../static/img/twitter-wrap.png">
-    </a>
-
-    <a href= ''>
-      <img src="../static/img/facebook-wrap.png">
-    </a>
-    <p>&copy; 2017 Allan Kueng.</P>
+        <p>&copy; 2017 Allan Kueng</p>
     </footer>
-    </div>
 
 
 
 
         <script src="/static/js/vendor/disTime.min.js"></script>
+        <script src="/static/js/jquery-1.11.2.min.js"></script>
+
         <!-- <script src="/static/js/background.js"></script> -->
         <script src="/static/js/bootstrap.min.js"></script>
+        <script src="/static/js/animsition.min.js"></script>
 
     </body>
 </html>
