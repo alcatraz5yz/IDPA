@@ -158,8 +158,8 @@ header {
   background: url('../img/gallery.svg') center no-repeat;
   background-size: 30px 30px;
   display: block;
-  float: left;
-  margin-left: -725px;
+  float: right;
+  margin-right: -200px;
 }
 .icon-power { /*#logout*/
   width: 30px;
@@ -168,7 +168,7 @@ header {
   background-size: 30px 30px;
   display: block;
   float: right;
-  margin-right: -300px;
+  margin-right: -400px;
 }
 .icon-profile {
   width: 30px;
@@ -177,7 +177,7 @@ header {
   background-size: 30px 30px;
   display: block;
   float: right;
-  margin-right: -250px;
+  margin-right: -350px;
 }
 .about { /*war icon-power2*/
   width: 30px;
@@ -186,7 +186,7 @@ header {
   background-size: 30px 30px;
   display: block;
   float: right;
-  margin-right: -250px;
+  margin-right: -350px;
 }
 .paint { /*war icon-power3*/
   width: 30px;
@@ -195,7 +195,7 @@ header {
   background-size: 30px 30px;
   display: block;
   float: right;
-  margin-right: -200px;
+  margin-right: -300px;
 }
 
 .stream {  /*war icon-power4*/
@@ -205,9 +205,18 @@ header {
   background-size: 30px 30px;
   display: block;
   float: right;
-  margin-right: -150px;
+  margin-right: -250px;
 }
 .game {
+  width: 30px;
+  height: 30px;
+  background: url('../img/game.svg') center no-repeat;
+  background-size: 30px 30px;
+  display: block;
+  float: right;
+  margin-right: -150px;
+}
+.game2 {
   width: 30px;
   height: 30px;
   background: url('../img/game.svg') center no-repeat;

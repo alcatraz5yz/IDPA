@@ -10,8 +10,18 @@
 <!--        <link rel="stylesheet" href="/static/css/normalize.min.css">-->
         <!-- <link rel="stylesheet" href="/static/css/background.css"> -->
         <link rel="stylesheet" href="/static/css/main.css">
-<!--        <link rel="stylesheet" href="/static/css/index.css">-->
+        <link rel="stylesheet" href="/static/css/index.css">
         <link rel="stylesheet" href="/static/css/carousel.css">
+<!--        <link rel="stylesheet" href="/static/css/gallery.css" type="text/css" media="screen" title="no title" charset="utf-8">-->
+
+
+        <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #3E3F42;
+        }
+    </style>
 
 
 
@@ -51,6 +61,7 @@
                 <a href="{{ url_for('stream') }}" class="stream" title="stream"></a>
                 <a href="{{ url_for('gallery') }}" class="gallery" title="gallery"></a>
                 <a href="{{ url_for('game') }}" class="game" title="game"></a>
+                <a href="{{ url_for('game2') }}" class="game2" title="game2"></a>
                 {% else %}
                 <a href="{{ url_for('login') }}" class="icon-power" title="Log in"></a>
                 <a href="{{ url_for('register') }}" class="icon-profile" title="Register"></a>
@@ -81,20 +92,20 @@
 
 
 
+
 <div class="container">
-  <div class="galleries" style="float:eft">
-    <h4>jR3DCarousel - with default options</h4>
-    <div class="jR3DCarouselGalleryDefault"></div>
-  </div>
-  <br/>
-  <hr/>
+
+
+
+
+
   <div class="galleries" style="float:rght">
-    <h4>jR3DCarousel - with custom slides template & perspective </h4>
+    <h4>Overview</h4>
     <div class="jR3DCarouselGalleryCustom">
       <div class="jR3DCarouselCustomSlide"><img src="https://unsplash.it/1327/772" />
         <div class="captions">This is custom text slide 1</div>
       </div>
-      <div class="jR3DCarouselCustomSlide"><img src="https://unsplash.it/1327/773" />
+      <div class="jR3DCarouselCustomSlide"><img src="/static/img/space-juice.png" />
         <div class="captions">This is custom text slide 2</div>
       </div>
       <div class="jR3DCarouselCustomSlide"><img src="https://unsplash.it/1327/774" />
@@ -104,12 +115,11 @@
         <div class="captions">This is custom text slide 4</div>
       </div>
       <div class="jR3DCarouselCustomSlide"><img src="https://unsplash.it/1327/777" />
-        <div class="captions">This is custom text slide 5</div>
+        <div class="captions">This  5</div>
       </div>
     </div>
   </div>
   <br/>
-  <hr/>
 </div>
 
 
@@ -127,25 +137,6 @@
 
 
 
-          <div class="grid-third">
-            <img src="/static/img/sticker-team.png" alt="" />
-            <p>United we stand divided we fail.  Meet the all star team behind the agency.</p>
-            <a href="team.html" class="button">Meet the Team</a>
-          </div><!--/team-->
-
-
-          <div class="grid-third">
-            <img src="/static/img/sticker-work.png" alt="" />
-            <p>Check our latest app builds or download them in the App Store.</p>
-            <a href="work.html" class="button">Latest Projects</a>
-          </div><!--/work-->
-
-
-          <div class="grid-third">
-            <img src="/static/img/sticker-contact.png" alt="" />
-            <p>Have questions or requests?  Feel free to contact us, we’d love hear from you.</p>
-            <a href="#" class="button">Contact Us</a>
-          </div><!--/contact-->
 
 
 
@@ -163,75 +154,44 @@
 
 
 
-          <div class="grid-third">
-            <img src="/static/img/sticker-team.png" alt="" />
-            <p>United we stand divided we fail.  Meet the all star team behind the agency.</p>
-            <a href="team.html" class="button">Meet the Team</a>
-          </div><!--/team-->
+
+            <div class="grid-third">
+              <img src="/static/img/sticker-team.png" alt="" />
+              <p>United we stand divided we fail.  Meet the all star team behind the agency.</p>
+              <a href="team.html" class="button">Meet the Team</a>
+            </div><!--/team-->
+            <div class="grid-third">
+              <img src="/static/img/sticker-work.png" alt="" />
+              <p>Check our latest app builds or download them in the App Store.</p>
+              <a href="work.html" class="button">Latest Projects</a>
+            </div><!--/work-->
+            <div class="grid-third">
+              <img src="/static/img/sticker-contact.png" alt="" />
+              <p>Have questions or requests?  Feel free to contact us, we’d love hear from you.</p>
+              <a href="#" class="button">Contact Us</a>
+            </div><!--/contact-->
 
 
-          <div class="grid-third">
-            <img src="/static/img/sticker-work.png" alt="" />
-            <p>Check our latest app builds or download them in the App Store.</p>
-            <a href="work.html" class="button">Latest Projects</a>
-          </div><!--/work-->
-
-
-          <div class="grid-third">
-            <img src="/static/img/sticker-contact.png" alt="" />
-            <p>Have questions or requests?  Feel free to contact us, we’d love hear from you.</p>
-            <a href="#" class="button">Contact Us</a>
-          </div><!--/contact-->
-
-
-
-
-
-
-
-
-          <div class="grid-third">
-            <img src="/static/img/sticker-team.png" alt="" />
-            <p>United we stand divided we fail.  Meet the all star team behind the agency.</p>
-            <a href="team.html" class="button">Meet the Team</a>
-          </div><!--/team-->
-
-
-          <div class="grid-third">
-            <img src="/static/img/sticker-work.png" alt="" />
-            <p>Check our latest app builds or download them in the App Store.</p>
-            <a href="work.html" class="button">Latest Projects</a>
-          </div><!--/work-->
-
-
-          <div class="grid-third">
-            <img src="/static/img/sticker-contact.png" alt="" />
-            <p>Have questions or requests?  Feel free to contact us, we’d love hear from you.</p>
-            <a href="#" class="button">Contact Us</a>
-          </div><!--/contact-->
+             <div class="grid-third">
+              <img src="/static/img/sticker-team.png" alt="" />
+              <p>United we stand divided we fail.  Meet the all star team behind the agency.</p>
+              <a href="team.html" class="button">Meet the Team</a>
+            </div><!--/team-->
+            <div class="grid-third">
+              <img src="/static/img/sticker-work.png" alt="" />
+              <p>Check our latest app builds or download them in the App Store.</p>
+              <a href="work.html" class="button">Latest Projects</a>
+            </div><!--/work-->
+            <div class="grid-third">
+              <img src="/static/img/sticker-contact.png" alt="" />
+              <p>Have questions or requests?  Feel free to contact us, we’d love hear from you.</p>
+              <a href="#" class="button">Contact Us</a>
+            </div><!--/contact-->
 
 
 
 
-          <div class="grid-third">
-            <img src="/static/img/sticker-team.png" alt="" />
-            <p>United we stand divided we fail.  Meet the all star team behind the agency.</p>
-            <a href="team.html" class="button">Meet the Team</a>
-          </div><!--/team-->
 
-
-          <div class="grid-third">
-            <img src="/static/img/sticker-work.png" alt="" />
-            <p>Check our latest app builds or download them in the App Store.</p>
-            <a href="work.html" class="button">Latest Projects</a>
-          </div><!--/work-->
-
-
-          <div class="grid-third">
-            <img src="/static/img/sticker-contact.png" alt="" />
-            <p>Have questions or requests?  Feel free to contact us, we’d love hear from you.</p>
-            <a href="#" class="button">Contact Us</a>
-          </div><!--/contact-->
 
 
 
@@ -247,13 +207,21 @@
 
 
 
+
+
+
 <!--        <script src="/static/js/vendor/disTime.min.js"></script>-->
-<!--        <script src="/static/js/jquery-1.11.2.min.js"></script>-->
+        <script src="/static/js/jquery-1.11.2.min.js"></script>
 
         <!-- <script src="/static/js/background.js"></script> -->
 <!--        <script src="/static/js/bootstrap.min.js"></script>-->
 <!--        <script src="/static/js/animsition.min.js"></script>-->
         <script src="/static/js/carousel.js"></script>
+        <script src="/static/js/jR3DCarousel.min.js"></script>
+<!--        <script src="/static/js/background.js"></script>-->
+
+<!--        <script src="/static/js/gallery.js" type="text/javascript" charset="utf-8"></script>-->
+
 
     </body>
 </html>

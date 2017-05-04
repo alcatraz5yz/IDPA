@@ -118,6 +118,12 @@ def game():
     return render_template('game.html')
 
 
+@app.route('/game2')
+@login_required
+def game2():
+    return render_template('game2.html')
+
+
 
 
 
