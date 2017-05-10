@@ -26,13 +26,9 @@ $("#revealColorSelect").click(function(){
 //update the new color span
 function changeColor() {
   var r = $("#red").val();
-  var b = $("#blue").val();
-  var y = $("#yellow").val();
   var g = $("#green").val();
-  var o = $("#orange").val();
-  var b = $("#violett").val();
-  var b = $("#black").val();
-  $("#newColor").css("background-color", "rgyb(" + r + "," + g +", " + y +", " + b + ")");
+  var b = $("#blue").val();
+  $("#newColor").css("background-color", "rgb(" + r + "," + g +", " + b + ")");
 }
 
 //When color sliders change

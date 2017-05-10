@@ -1,23 +1,30 @@
 BunnyDefender.StartMenu = function(game) {
-    this.startBG;
-    this.startPrompt;
-    this.ding;
+    this.audio;
+    this.image;
+    this.text;
+
 }
+//nur physik zeugs muss gezeigt werden wann und mit was und wie // mit audio muss das nicht gemacht werden
+
+
+
+
+
 
 BunnyDefender.StartMenu.prototype = {
-	
+
 	create: function () {
-        this.ding = this.add.audio('select_audio');
-        
-		startBG = this.add.image(0, 0, 'titlescreen');
-		startBG.inputEnabled = true;
-		startBG.events.onInputDown.addOnce(this.startGame, this);
-		
-		startPrompt = this.add.bitmapText(this.world.centerX-155, this.world.centerY+180, 'eightbitwonder', 'Touch to Start!', 24);
+    this.audio = this.add.audio('select_audio');//declariere sound
+		image = this.add.image(0, 0, 'titlescreen');//declariere hintergrundbild
+    text = this.add.bitmapText(this.world.centerX-155, this.world.centerY+180, 'eightbitwonder', 'hello world!', 24);//text
+		text.inputEnabled = true;//you can click on it now to start the game
+		text.events.onInputDown.addOnce(this.startGame, this);//muss nur einmal gedr?ckt werden um game zu starten noch declarieren wann?
+
 	},
 
 	startGame: function (pointer) {
-        this.ding.play();
-		this.state.start('Game');
+    this.audio.play();//mit pointer ist input enabled gemeint hier sound wird beim clicken gestartet
+		this.state.start('Game');//game wird nach sound gestartet
 	}
 };
+//1.hintergrundbild/  2.text start/   3.sound/    4.clickbarer text enabled dann sound.play

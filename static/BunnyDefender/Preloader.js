@@ -1,17 +1,27 @@
+//sorgt daf?r dass alle assets wie etwa sounds geladen werden
 BunnyDefender.Preloader = function(game) {
-    this.preloadBar = null;
-    this.titleText = null;
-    this.ready = false;
+    this.preloadBar = null;//moving on
+    this.titleText = null;//moving on
+    this.ready = false;// moving on, it doesnt load startmenu without these 3 lines of code
 };
 
+
+
+
+
+
 BunnyDefender.Preloader.prototype = {
-	
+
 	preload: function () {
 		this.preloadBar = this.add.sprite(this.world.centerX, this.world.centerY, 'preloaderBar');
 		this.preloadBar.anchor.setTo(0.5, 0.5);
 		this.load.setPreloadSprite(this.preloadBar);
 		this.titleText = this.add.image(this.world.centerX, this.world.centerY-220, 'titleimage');
 		this.titleText.anchor.setTo(0.5, 0.5);
+
+
+
+
         this.load.image('titlescreen', 'images/TitleBG.png');
         this.load.bitmapFont('eightbitwonder', 'fonts/eightbitwonder.png', 'fonts/eightbitwonder.fnt');
         this.load.image('hill', 'images/hill.png');
@@ -27,7 +37,7 @@ BunnyDefender.Preloader.prototype = {
 	},
 
 	create: function () {
-		this.preloadBar.cropEnabled = false;
+		this.preloadBar.cropEnabled = false;//crop means verl?ngern //turning it off now it has expanded and everything is loaded now
 	},
 
 	update: function () {

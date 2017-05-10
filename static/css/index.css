@@ -309,7 +309,7 @@ h2.row-title{
 .featimg{ vertical-align:sub; }
 
 
-@media (max-width: 600px){
+/*@media (max-width: 600px){
     .mcon-mainmenu-con{
         position:relative; width: 100%; overflow: hidden; height: 100px;
     }
@@ -317,7 +317,7 @@ h2.row-title{
     body section.mcon-maindemo.bgwhite{
         padding-top: 0!important;
     }
-}
+}*/
 
 
 
@@ -500,6 +500,8 @@ section.mcon-maindemo .separator-short figure {
 section.mcon-otherdemos{
     background: #fafafa;
     padding: 25px 0;
+    margin-left: 300px;
+    margin-right: 300px;
     color: #111;
     position: relative;
 

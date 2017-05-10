@@ -84,6 +84,9 @@ h2 {
     margin: -5px 0 0;
     font-weight: normal;
 }
+h1{
+  text-align: center;
+}
 
 a {
   text-decoration: none;
@@ -116,7 +119,7 @@ p {
 /*Header*/
 header {
   width: 100%;
-  
+
 
   padding: 10px 0;
 }
@@ -370,13 +373,20 @@ button.small {
 /*Footer*/
 footer{
   color: #777B7E;
+
   text-align: center;
+  background-color: #2D2D2D;
 
   font-size: .875em;
-  margin: 40px 0;
+  margin-left: -300px;
+  margin-right: -300px;
+  margin-top: 0px;
+  padding: 0em 600px;
+  position: absolute;
 }
 
 footer p {
+  /*position: absolute;*/
   opacity: .7;
 }
 
