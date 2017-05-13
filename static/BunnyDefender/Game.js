@@ -1,18 +1,4 @@
 BunnyDefender.Game = function(game) {
-    this.totalBunnies;
-    this.bunnyGroup;
-    this.totalSpacerocks;
-    this.spacerockgroup;
-    this.burst;
-    this.gameover;
-    this.overmessage;
-    this.secondsElapsed;
-    this.timer;
-    this.countdown;
-    this.music;
-    this.ouch;
-    this.boom;
-    this.ding;
 };
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

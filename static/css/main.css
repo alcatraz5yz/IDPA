@@ -27,7 +27,53 @@ nav a {
     clear: both;
     padding-top: 50px;
     color: #ccc;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.background{
+    /*height: relative;*/
+    left: -300px;
+    /*position: absolute;*/
+    top: -300px;
+    bottom: -90px;
+    width: 100%;
+    height: 100%;
+    /*margin-bottom: 40px;*/
+    /*z-index: -1;*/
 }
+
+#background1{
+    background: url(../img/background.jpg) 100% 0;
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -87,6 +133,10 @@ h2 {
 h1{
   text-align: center;
 }
+h3{
+  text-align: center;
+  /*padding-top: 90px;*/
+}
 
 a {
   text-decoration: none;
@@ -111,18 +161,47 @@ h1, h2, h3, h4 {
 }
 
 /*########################################################################*/
+/*Sticky*/
+header{
+.header {
+  background-color: white;
+  position:fixed;
+  transition: 1s;
+}
+
+.is-sticky .header {
+  background-color: black;
+  position:fixed;
+}
+
+.is-sticky .index {
+  background: #fff;
+  padding: 12px 0;
+  position:fixed;
+  margin: 0;
+}
+}
+
+
+
+
+
+
+
+
+
 p {
   margin: 0;
   line-height: 1.5em;
 }
 
 /*Header*/
-header {
+/*header {
   width: 100%;
 
 
   padding: 10px 0;
-}
+}*/
 .icon-logo { /*linkes logo */
   width: 30px;
   height: 30px;
@@ -131,7 +210,7 @@ header {
   display: block;
   float: left;
   margin-left: -250px;
-  margin-top: 20px;
+  margin-top: 45px;
 }
 
 .gallery { /*anime rechts neben index*/
@@ -142,6 +221,7 @@ header {
   display: block;
   float: right;
   margin-right: -200px;
+  margin-top: 30px;
 }
 .icon-power { /*#logout*/
   width: 30px;
@@ -151,6 +231,7 @@ header {
   display: block;
   float: right;
   margin-right: -400px;
+  margin-top: 30px;
 }
 .icon-profile {
   width: 30px;
@@ -160,6 +241,7 @@ header {
   display: block;
   float: right;
   margin-right: -350px;
+  margin-top: 30px;
 }
 .about { /*war icon-power2*/
   width: 30px;
@@ -169,6 +251,7 @@ header {
   display: block;
   float: right;
   margin-right: -350px;
+  margin-top: 30px;
 }
 .paint { /*war icon-power3*/
   width: 30px;
@@ -178,6 +261,7 @@ header {
   display: block;
   float: right;
   margin-right: -300px;
+  margin-top: 30px;
 }
 
 .stream {  /*war icon-power4*/
@@ -188,6 +272,7 @@ header {
   display: block;
   float: right;
   margin-right: -250px;
+  margin-top: 30px;
 }
 .game {
   width: 30px;
@@ -197,6 +282,7 @@ header {
   display: block;
   float: right;
   margin-right: -150px;
+  margin-top: 30px;
 }
 .game2 {
   width: 30px;
@@ -206,6 +292,7 @@ header {
   display: block;
   float: right;
   margin-right: -100px;
+  margin-top: 30px;
 }
 
 
@@ -375,18 +462,20 @@ footer{
   color: #777B7E;
 
   text-align: center;
+  align-self: center;
   background-color: #2D2D2D;
 
   font-size: .875em;
   margin-left: -300px;
   margin-right: -300px;
-  margin-top: 0px;
-  padding: 0em 600px;
-  position: absolute;
+  margin-bottom: -90px;
+  /*margin-top: -90px;*/
+  /*padding: 0em 600px;*/
+  /*position: absolute;*/
 }
 
 footer p {
-  /*position: absolute;*/
+  position: absolute;
   opacity: .7;
 }
 

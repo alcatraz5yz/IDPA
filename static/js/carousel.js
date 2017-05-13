@@ -12,9 +12,9 @@ $(document).ready(function() {
 
   // Or with options
   $('.jR3DCarouselGalleryCustom').jR3DCarousel({
-    width: 470,
+    width: 700,
     /* largest allowed width */
-    height: 272,
+    height: 400,
     /* largest allowed height */
     slideLayout: 'fill',
     /* "contain" (fit according to aspect ratio), "fill" (stretches object to fill) and "cover" (overflows box but maintains ratio) */
