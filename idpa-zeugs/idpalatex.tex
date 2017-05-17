@@ -1,0 +1,143 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage[margin=1in,
+includefoot]{geometry}%f?r rand des Textes/dokumentes
+\usepackage{lipsum}%fillertext latin nonsense
+\usepackage[margin=1in,left=1.5in,includefoot]{geometry}%f?r rand des Textes/dokumentes
+\usepackage[hidelinks]{hyperref} % Allows for clickable references
+% Tables preamble
+\usepackage[none]{hyphenat} % Stops breaking up words in a table
+\usepackage[english]{babel}
+\usepackage{float} % Allows for control of float positions.
+\usepackage{listings}
+\usepackage{color}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%f?r codeblocks
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=
+}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstset{style=mystyle}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{multicol}
+%shortcut for fettew?rter machen geht auch mit bfseries, wenn man das hier hat,
+%muss man nur \rowstyle $ ^ ^ ^ ^  diese package ist gar nicht n?tig bei 2 table
+\usepackage{array}
+\newcolumntype{$}{>{\global\let\currentrowstyle\relax}}
+\newcolumntype{^}{>{\currentrowstyle}}
+\newcommand{\rowstyle}[1]{\gdef\currentrowstyle{#1} #1\ignorespaces}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Graphics preamble Allows you to import images
+\usepackage{graphicx}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{float} % Allows for control of float positions.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Math preamble Allows us to write chemistry equations!
+\usepackage{mhchem}
+%f?r mathe 1/2 z.b wird richtig gezeigt.==> \sfrac{1}{2} ohne \frac{1}{2}
+\usepackage{xfrac}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography preamble f?r Referenzen hier mit bibtex reihenfolge hyperlinking zu refer.
+\usepackage[numbers,sort&compress]{natbib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bullet preamble for \begin{itemize} \item a f?r subbullet nochmals beginn und item
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\diamond$}
+\renewcommand{\labelitemiii}{$\circ$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% f?r kopf und fusszeile }%macht f?r Kopf/Fusszeile strich+ man kann da dann schreiben
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[R]{ \thepage\ }
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\section{\"Ubersicht}
+\subsection{Die Programmiersprachen}
+eine website kann man eigentlich mit nur CSS und HTML erstellen, da ich es aber etwas komplexer haben will, muss ich auch noch die sprachen Python und Javascript hinzuf\"ugen.
+\subsection{jquery}
+Mit jquery mache ich die spiele und alle animationen. Jquery ist ein Framework welches auf Javascript beruht
+\subsection{Datenbank}
+Da ich noch anf\"anger bin, habe ich mich f\"ur die Lite version der Databases entschieden n\"amlich sqlite
+\subsection{Hochladen}
+Zum Gl\"uck gibt es einen Ort wo ich meine seite gratis Hochladen kann, dieser Ort heisst Heroku.
+Heroku ist ein Service der es mir erm\"oglicht komplexere seiten hochzuladen und diese auch zu warten.
+\subsection{Latex}
+Ich schreibe mein Project und diese Zwischenarbeit nicht wie alle anderen mit Word, sondern mit der Programmiersprache Latex.
+\subsection{github}
+Ich Lade meinen ganzen Code nat\"urlich auf Github um ihn mit anderen Teilen zu k\"onnen, und ihn abzusichern.
+Da Github mit version control arbeitet ist es einfach meinen Code herunterzuladen und ihn zu ver\"andern.
+
+\subsection{schon gemacht}
+Sprachen lernen (html/ html mit flask/ css/Python flask/)
+\\*
+Grundstruktur der Seiten mit css/html
+\\*
+Git/Github Basics gelernt und code auf github gespeichert
+\\*
+Heroku Hochladen mit Procfile/requirements.txt
+\\*
+Seite zum Zeichnen mit jquery
+\\*
+Seite zum Posten mit flask
+
+
+
+
+
+
+
+\subsection{noch zu machen}
+Post teil noch verbessern
+\\*
+Hintergrund noch verbessern
+\\*
+evtl noch bootstrap einf\"ugen
+\\*
+game noch einf\"ugen
+\\*
+login evtl 3d
+\\*
+evtl noch mehr sicherheit beim login
+\\*
+evtl testfiles
+\\*
+Evtl mit mail kontaktieren wenn signup
+\\*
+Helpertools verwenden z.B. bower/gulp/sass
+
+
+
+
+
+
+
+\renewcommand{\footrulewidth}{1pt}
+\fancyfoot[c]{Zusammenfassung}
+\cleardoublepage
+
+\end{document}

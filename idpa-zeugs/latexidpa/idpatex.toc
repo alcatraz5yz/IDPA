@@ -1,0 +1,38 @@
+\select@language {ngerman}
+\contentsline {section}{\hbox to\@tempdima {\hfil }List of Figures}{iii}{section*.3}
+\contentsline {section}{\numberline {1}Zeitplan}{1}{section.1}
+\contentsline {section}{\numberline {2}Allgemeines}{3}{section.2}
+\contentsline {section}{\numberline {3}html}{4}{section.3}
+\contentsline {section}{\numberline {4}css}{5}{section.4}
+\contentsline {section}{\numberline {5}jquery}{6}{section.5}
+\contentsline {section}{\numberline {6}meine jquery-Plugins}{6}{section.6}
+\contentsline {section}{\numberline {7}Flask}{7}{section.7}
+\contentsline {subsection}{\numberline {7.1}Python-allgemein}{7}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}flask-allgemein}{7}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}flask-vereinfacht}{7}{subsection.7.3}
+\contentsline {section}{\numberline {8}Datenbanken}{8}{section.8}
+\contentsline {section}{\numberline {9}Text Editor}{9}{section.9}
+\contentsline {section}{\numberline {10}Git und Github}{10}{section.10}
+\contentsline {section}{\numberline {11}phaser Engine}{11}{section.11}
+\contentsline {section}{\numberline {12}Latex}{12}{section.12}
+\contentsline {section}{\numberline {13}heroku}{13}{section.13}
+\contentsline {section}{\numberline {14}CLI/Terminal/cmd/Powershell/iTerm}{14}{section.14}
+\contentsline {subsection}{\numberline {14.1}Wof"ur ich den Terminal alles brauche}{14}{subsection.14.1}
+\contentsline {section}{\numberline {15}Erstellen der Seite}{17}{section.15}
+\contentsline {section}{\numberline {16}signup}{17}{section.16}
+\contentsline {section}{\numberline {17}login}{18}{section.17}
+\contentsline {section}{\numberline {18}logout}{19}{section.18}
+\contentsline {section}{\numberline {19}stream}{20}{section.19}
+\contentsline {section}{\numberline {20}paint}{21}{section.20}
+\contentsline {section}{\numberline {21}Game}{22}{section.21}
+\contentsline {subsection}{\numberline {21.1}Sounds}{22}{subsection.21.1}
+\contentsline {subsection}{\numberline {21.2}Meine Verwendeten Bilder und Sprites}{22}{subsection.21.2}
+\contentsline {subsection}{\numberline {21.3}Game Teil1: index.html}{24}{subsection.21.3}
+\contentsline {subsection}{\numberline {21.4}Game Teil2: Boot.js}{24}{subsection.21.4}
+\contentsline {subsection}{\numberline {21.5}Game Teil3: Preloader.js}{25}{subsection.21.5}
+\contentsline {subsection}{\numberline {21.6}Game Teil4: Startmenu.js}{26}{subsection.21.6}
+\contentsline {subsection}{\numberline {21.7}Game Teil5: Game.js}{27}{subsection.21.7}
+\contentsline {section}{\numberline {22}Zusammenfassung}{28}{section.22}
+\contentsline {section}{\numberline {23}Summary}{29}{section.23}
+\contentsline {section}{\numberline {24}Literaturverzeichnis}{30}{section.24}
+\contentsline {section}{\numberline {A}Anhang}{31}{appendix.A}
