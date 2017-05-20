@@ -10,7 +10,7 @@ window.onload = function() {
     var rayLength = 100;
 
     function onPreload() {
-        game.load.image("floor","floor.png");
+        game.load.image("floor","floor.png");//helllo
         game.load.image("walls","walls.png");
         game.load.image("player","player.png");
     }
