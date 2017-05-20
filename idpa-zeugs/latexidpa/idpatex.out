@@ -8,30 +8,28 @@
 \BOOKMARK [1][-]{section.7}{Flask}{}% 8
 \BOOKMARK [2][-]{subsection.7.1}{Python-allgemein}{section.7}% 9
 \BOOKMARK [2][-]{subsection.7.2}{flask-allgemein}{section.7}% 10
-\BOOKMARK [2][-]{subsection.7.3}{flask-vereinfacht}{section.7}% 11
-\BOOKMARK [1][-]{section.8}{Datenbanken}{}% 12
-\BOOKMARK [1][-]{section.9}{Text Editor}{}% 13
-\BOOKMARK [1][-]{section.10}{Git und Github}{}% 14
-\BOOKMARK [1][-]{section.11}{phaser Engine}{}% 15
-\BOOKMARK [1][-]{section.12}{Latex}{}% 16
-\BOOKMARK [1][-]{section.13}{heroku}{}% 17
-\BOOKMARK [1][-]{section.14}{CLI/Terminal/cmd/Powershell/iTerm}{}% 18
-\BOOKMARK [2][-]{subsection.14.1}{Wof\374r ich den Terminal alles brauche}{section.14}% 19
-\BOOKMARK [1][-]{section.15}{Erstellen der Seite}{}% 20
-\BOOKMARK [1][-]{section.16}{signup}{}% 21
-\BOOKMARK [1][-]{section.17}{login}{}% 22
-\BOOKMARK [1][-]{section.18}{logout}{}% 23
-\BOOKMARK [1][-]{section.19}{stream}{}% 24
-\BOOKMARK [1][-]{section.20}{paint}{}% 25
-\BOOKMARK [1][-]{section.21}{Game}{}% 26
-\BOOKMARK [2][-]{subsection.21.1}{Sounds}{section.21}% 27
-\BOOKMARK [2][-]{subsection.21.2}{Meine Verwendeten Bilder und Sprites}{section.21}% 28
-\BOOKMARK [2][-]{subsection.21.3}{Game Teil1: index.html}{section.21}% 29
-\BOOKMARK [2][-]{subsection.21.4}{Game Teil2: Boot.js}{section.21}% 30
-\BOOKMARK [2][-]{subsection.21.5}{Game Teil3: Preloader.js}{section.21}% 31
-\BOOKMARK [2][-]{subsection.21.6}{Game Teil4: Startmenu.js}{section.21}% 32
-\BOOKMARK [2][-]{subsection.21.7}{Game Teil5: Game.js}{section.21}% 33
-\BOOKMARK [1][-]{section.22}{Zusammenfassung}{}% 34
-\BOOKMARK [1][-]{section.23}{Summary}{}% 35
-\BOOKMARK [1][-]{section.24}{Literaturverzeichnis}{}% 36
-\BOOKMARK [1][-]{appendix.A}{Anhang}{}% 37
+\BOOKMARK [1][-]{section.8}{phaser Engine}{}% 11
+\BOOKMARK [1][-]{section.9}{Datenbanken}{}% 12
+\BOOKMARK [1][-]{section.10}{Text Editor}{}% 13
+\BOOKMARK [1][-]{section.11}{Git und Github}{}% 14
+\BOOKMARK [1][-]{section.12}{Latex}{}% 15
+\BOOKMARK [1][-]{section.13}{heroku}{}% 16
+\BOOKMARK [1][-]{section.14}{CLI/Terminal/cmd/Powershell/iTerm}{}% 17
+\BOOKMARK [2][-]{subsection.14.1}{Wof\374r ich den Terminal f\374r meine Arbeit alles brauche}{section.14}% 18
+\BOOKMARK [1][-]{section.15}{Erstellen der Seite}{}% 19
+\BOOKMARK [2][-]{subsection.15.1}{Routing}{section.15}% 20
+\BOOKMARK [2][-]{subsection.15.2}{Login}{section.15}% 21
+\BOOKMARK [1][-]{section.16}{Game}{}% 22
+\BOOKMARK [2][-]{subsection.16.1}{Sounds}{section.16}% 23
+\BOOKMARK [2][-]{subsection.16.2}{Meine Verwendeten Bilder und Sprites}{section.16}% 24
+\BOOKMARK [2][-]{subsection.16.3}{Game Teil1: index.html}{section.16}% 25
+\BOOKMARK [2][-]{subsection.16.4}{Game Teil2: Boot.js}{section.16}% 26
+\BOOKMARK [2][-]{subsection.16.5}{Game Teil3: Preloader.js}{section.16}% 27
+\BOOKMARK [2][-]{subsection.16.6}{Game Teil4: Startmenu.js}{section.16}% 28
+\BOOKMARK [2][-]{subsection.16.7}{Game Teil5: Game.js}{section.16}% 29
+\BOOKMARK [1][-]{section.17}{Zusammenfassung}{}% 30
+\BOOKMARK [1][-]{section.18}{Summary}{}% 31
+\BOOKMARK [1][-]{section.19}{Literaturverzeichnis}{}% 32
+\BOOKMARK [2][-]{subsection.19.1}{B\374cher}{section.19}% 33
+\BOOKMARK [2][-]{subsection.19.2}{Webseiten}{section.19}% 34
+\BOOKMARK [1][-]{appendix.A}{Anhang}{}% 35
