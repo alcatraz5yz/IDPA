@@ -11,7 +11,7 @@ window.onload = function() {
 
     function onPreload() {
         game.load.image("floor","floor.png");//helllo
-        game.load.image("walls","walls.png");
+        game.load.image("walls","walls.png");//salkfja
         game.load.image("player","player.png");
     }
 
