@@ -12,9 +12,9 @@ Survive.Game.prototype = {
         this.music = this.add.audio('game_audio');
         this.music.play('', 0, 0.3, true);
         this.gameover = false;
-//        this.totalPlayers = 1;
-        this.totalStars = 1;
-        this.totalSpacerocks = 200;
+      //  this.totalPlayers = 2;
+        this.totalStars = 4;
+        this.totalSpacerocks = 8;
         this.physics.startSystem(Phaser.Physics.ARCADE);
         this.buildWorld();
     },

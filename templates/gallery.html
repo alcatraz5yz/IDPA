@@ -7,11 +7,21 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="/static/css/normalize.min.css">
+        <!-- <link rel="stylesheet" href="/static/css/normalize.min.css"> -->
         <link rel="stylesheet" href="/static/css/background.css">
         <link rel="stylesheet" href="/static/css/main.css">
         <link rel="stylesheet" href="/static/css/gallery.css" type="text/css" media="screen" title="no title" charset="utf-8">
-        <link rel="stylesheet" href="https://unpkg.com/smartphoto@0.5.9/css/smartphoto.min.css">
+
+
+
+
+        <link href="/static/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+        <!-- <link rel="stylesheet" href="https://unpkg.com/smartphoto@0.5.9/css/smartphoto.min.css"> -->
 
 
             <!-- <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> -->
@@ -33,14 +43,14 @@
 
             <div class="grid-33">
 
-                <!-- Say Hi -->
+
                 <h1>Hello{% if current_user.is_authenticated() %} {{ current_user.username }}{% endif %}!</h1>
 
             </div>
 
             <div class="grid-33">
 
-                <!-- Log in/Log out -->
+
                 {% if current_user.is_authenticated() %}
                 <a href="{{ url_for('logout') }}" class="icon-power" title="Log out"></a>
                 <a href="{{ url_for('about') }}" class="about" title="about"></a>
@@ -60,7 +70,7 @@
 
         </header>
 
-        <!-- Flash messages -->
+
         {% with messages = get_flashed_messages(with_categories=True) %}
             {% if messages %}
                 {% for category, message in messages %}
@@ -68,9 +78,10 @@
                 {% endfor %}
             {% endif %}
         {% endwith %}
+        <canvas id="canvas"></canvas>
 
         <div class="row">
-          <canvas id="canvas"></canvas>
+
 
           <h1>Image Gallery</h1>
           <ul id="imageGallery">
@@ -84,7 +95,7 @@
             <li><a href="/static/img/library.png"><img src="/static/img/library.png" width="100" alt="Library by Tyson Rosage"></a></li>
             <li><a href="/static/img/boat.png"><img src="/static/img/boat.png" width="100" alt="Boat by Griffin Moore"></a></li>
             <li><a href="/static/img/illustrator_foundations.png"><img src="/static/img/illustrator_foundations.png" width="100" alt="Illustrator Foundations by Matthew Spiel"></a></li>
-            <li><a href="/static/img/treehouse_shop.jpg"><img src="/static/img/treehouse_shop.jpg" width="100" alt="Treehouse Shop by Eric Smith"></a></li>
+            <!-- <li><a href="/static/img/treehouse_shop.jpg"><img src="/static/img/treehouse_shop.jpg" width="100" alt="Treehouse Shop by Eric Smith"></a></li>
             <li><a href="/static/img/_origin_Dazi-Maindfaki-22.jpg"><img src="/static/img/_origin_Dazi-Maindfaki-22.jpg" width="100" alt="funny meme"></a></li>
             <li><a href="/static/img/0f20aa6fc86e9fad9001a783ace6f408.jpg"><img src="/static/img/0f20aa6fc86e9fad9001a783ace6f408.jpg" width="100" alt="Good Job Retard"></a></li>
             <li><a href="/static/img/1f5d18aa90bb034f08703d771e6d6ac7.jpg"><img src="/static/img/1f5d18aa90bb034f08703d771e6d6ac7.jpg" width="100" alt="oh crap"></a></li>
@@ -105,18 +116,43 @@
             <li><a href="/static/img/meme.jpg"><img src="/static/img/meme.jpg" width="50" alt="funny meme"></a></li>
             <li><a href="/static/img/neTYTWb.jpg"><img src="/static/img/neTYTWb.jpg" width="100" alt="funny star wars"></a></li>
             <li><a href="/static/img/original-1.jpg"><img src="/static/img/original-1.jpg" width="100" alt="daijobu"></a></li>
-            <li><a href="/static/img/squirrel.jpg"><img src="/static/img/squirrel.jpg" width="100" alt="outsch"></a></li>
+            <li><a href="/static/img/squirrel.jpg"><img src="/static/img/squirrel.jpg" width="100" alt="outsch"></a></li> -->
 
           </ul>
-
-
-
   </div>
 
 
+  <div id="nanogallery2" data-nanogallery2='{
+
+"galleryBuildInit2":  "perspective_900px|perspective-origin_50% 150%",
+"thumbnailHoverEffect2":     "thumbnail_translateZ_0px_100px_easeOutQuad_400 | thumbnail_rotateX_0deg_10deg_easeOutBack_200 | thumbnail_rotateX_10deg_0deg_delay250_keyframe_hoverin_easeOutBack_400"
+
+  }'>
+            <a href="/static/img/universe.jpg" data-ngThumb="/static/img/universe.jpg"></a>
+            <a href="/static/img/original-1.jpg" data-ngThumb="/static/img/original-1.jpg"></a>
+            <a href="/static/img/original-1.jpg" data-ngThumb="/static/img/original-1.jpg"></a>
+            <a href="/static/img/original-1.jpg" data-ngThumb="/static/img/original-1.jpg"></a>
+            <a href="/static/img/original-1.jpg" data-ngThumb="/static/img/original-1.jpg"></a>
+            <a href="/static/img/original-1.jpg" data-ngThumb="/static/img/original-1.jpg"></a>
+
+          </div>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ul id="js-smartPhoto">
 
     <a href="./static/img/squirrel.jpg" class="js-smartPhoto" data-caption="bear" data-id="bear" data-group="animal"/>
   <img src="./static/img/squirrel.jpg" />
@@ -128,15 +164,17 @@
   <img src="./static/img/squirrel.jpg" />
 </a>
 
-
+</ul> -->
 
 
         <!-- <script src="/static/js/vendor/disTime.min.js"></script> -->
         <script src="/static/js/background.js"></script>
-        <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/static/js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="/static/js/gallery.js" type="text/javascript" charset="utf-8"></script>
-        <script src="https://unpkg.com/smartphoto@0.5.9/js/smartphoto.min.js"></script>
-        <script src="/static/js/smartphoto.js"></script>
+        <script src="/static/js/jquery.nanogallery2.min.js" type="text/javascript" charset="utf-8"></script>
+        <!-- <script src="/static/js/smartphoto.js"></script> -->
+          <!-- <script src="/static/js/smartphoto.min.js"></script> -->
+        <!-- <script src="/static/js/jquery-smartphoto.min.js"></script> -->
 
     </body>
 </html>

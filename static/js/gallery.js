@@ -20,10 +20,10 @@ $("#imageGallery a").click(function(event){
   var imageLocation = $(this).attr("href");
   //Update overlay with the image linked in the link
   $image.attr("src", imageLocation);
-  
+
   //Show the overlay.
   $overlay.show();
-  
+
   //Get child's alt attribute and set caption
   var captionText = $(this).children("img").attr("alt");
   $caption.text(captionText);
@@ -34,13 +34,3 @@ $overlay.click(function(){
   //Hide the overlay
   $overlay.hide();
 });
-
-
-
-
-
-
-
-
-
-
