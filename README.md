@@ -4,31 +4,8 @@ for my project I wanted to create an interactive website where you can see
 DO login/signup using simple flask
 -Also some other little games made with pure javascript=>jQuery
 -also some cool background arts
--it is deployed to heroku so you can watch it on idpa.heroku.com
+-it is deployed to heroku so you can watch it on idpa.herokuapp.com
 
-
-
-
-
-[x]gantt picture
-
-[]structure of whole website
-
-[]evtl with mysql oder postgresql (sqlalchemy)
-
-[]restful api mit hoher sicherheitsstufe
-
-[]jquery games finished
-
-[]assemble everything
-
-[]latex file finished?
-
-[x]md file in github finished
-
-[]testfiles schreiben
-
-[x]deploy to heroku
 
 
 
